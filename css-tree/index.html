@@ -1,0 +1,192 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>CSS only tree</title>
+	<style>
+		[type=checkbox]:checked~span~ul{
+				display:none;		
+		}
+
+		[type=checkbox]{
+			margin-left:-15px;
+			background-color: white;
+			border: 1px solid black;
+			height: 14px;
+			width: 14px;
+			-webkit-appearance: none;
+		       -moz-appearance: none;
+			     -o-appearnace: none;
+			position: relative;
+		}
+
+		[type=checkbox]:checked::before {
+			position: absolute;
+			top: -1px;
+			left:2px;
+			content: "+";
+		}
+
+
+		[type=checkbox]:not(:checked)::before {
+			position: absolute;
+			top: -2px;
+			left:4px;
+			content: "-";
+		}
+
+
+		ul{
+			margin: 0;
+			padding-left:15px;
+		}
+		
+		li{
+			margin:0;
+			padding:0;
+			list-style:none;
+		}
+
+
+	</style>
+</head>
+<body>
+	<ul>
+	        <li>
+	                <input type="checkbox" class="expandChild" />
+	                <span>sub-element</span>
+	                <ul>
+	                        <li>
+	                                <input type="checkbox" class="expandChild" />
+	                                <span>sub-sub-el</span>
+	                        		<ul>
+	                        		        <li>
+	                        		                <input type="checkbox" class="expandChild" />
+	                        		                <span>deep lorem</span>
+	                        		                <ul>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+															<li>
+																	<input type="checkbox" class="expandChild" />
+																	<span>deep lorem</span>
+																	<ul>
+																			<li>
+																					<span>ipsum dolor</span>
+																			</li>
+																			<li>
+																					<span>ipsum dolor</span>
+																			</li>
+																			<li>
+																					<span>ipsum dolor</span>
+																			</li>
+																			<li>
+																					<span>ipsum dolor</span>
+																			</li>
+																			<li>
+																					<span>ipsum dolor</span>
+																			</li>
+																			<li>
+																					<span>ipsum dolor</span>
+																			</li>
+																	</ul>
+															</li>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+	                        		                </ul>
+	                        		        </li>
+	                        		        <li>
+	                        		                <input type="checkbox" class="expandChild" />
+	                        		                <span>deep lorem</span>
+	                        		                <ul>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+	                        		                        <li>
+	                        		                                <span>ipsum dolor</span>
+	                        		                        </li>
+	                        		                </ul>
+	                        		        </li>
+	                        		</ul>
+							</li>
+	                        <li>
+	                                <span>sub-sub-el</span>
+	                        </li>
+	                        <li>
+	                                <span>sub-sub-el</span>
+	                        </li>
+	                </ul>
+	        </li>
+	        <li>
+	                <input type="checkbox" class="expandChild" />
+	                <span>sub-element</span>
+	                <ul>
+	                        <li>
+	                                <span>sub-sub-el</span>
+	                        </li>
+	                        <li>
+	                                <span>sub-sub-el</span>
+	                        </li>
+	                        <li>
+	                                <span>sub-sub-el</span>
+	                        </li>
+	                </ul>
+	        </li>
+	        <li>
+	                <input type="checkbox" class="expandChild" />
+	                <span>sub-element</span>
+	                <ul>
+	                        <li>
+	                                <span>sub-sub-el</span>
+	                        </li>
+	                        <li>
+	                                <span>sub-sub-el</span>
+	                        </li>
+	                        <li>
+	                                <span>sub-sub-el</span>
+	                        </li>
+	                </ul>
+	        </li>
+	        <li>
+	                <input type="checkbox" class="expandChild" />
+	                <span>sub-element</span>
+	                <ul>
+	                        <li>
+	                                <span>sub-sub-el</span>
+	                        </li>
+	                        <li>
+	                                <span>sub-sub-el</span>
+	                        </li>
+	                        <li>
+	                                <span>sub-sub-el</span>
+	                        </li>
+	                </ul>
+	        </li>
+	</ul>
+</body>
+</html>
